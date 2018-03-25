@@ -1,0 +1,14 @@
+Source: netxms-release
+Section: admin
+Priority: extra
+Maintainer: Alex Kirhenshtein <alk@netxms.org>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.netxms.org/
+Vcs-Git: https://git.netxms.org.org/public/netxms-packages.git
+Vcs-Browser: http://git.netxms.org/public/netxms-packages.git
+
+Package: netxms-release
+Architecture: all
+Depends: ${misc:Depends}
+Description: Package to install apt source and gpg keyring

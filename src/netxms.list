@@ -1,0 +1,5 @@
+# Stable releases
+deb http://packages.netxms.org/VENDOR DIST main
+
+# Beta/Milestone releases, can be less stable (uncomment to enable)
+#deb http://packages.netxms.org/VENDOR DIST beta

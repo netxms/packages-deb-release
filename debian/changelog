@@ -1,0 +1,17 @@
+netxms-release (1.2) unstable; urgency=medium
+
+  * PGP key updated
+
+ -- Alex Kirhenshtein <alk@netxms.org>  Sun, 25 Mar 2018 15:59:53 +0300
+
+netxms-release (1.1) unstable; urgency=medium
+
+  * Support for Ubuntu
+
+ -- Alex Kirhenshtein <alk@debian8-64.radensolutions.com>  Mon, 04 Jan 2016 12:11:30 +0200
+
+netxms-release (1.0-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Alex Kirhenshtein <alk@netxms.org>  Fri, 27 Mar 2015 20:54:35 +0200

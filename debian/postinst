@@ -1,0 +1,7 @@
+#!/bin/sh
+
+vendor=debian
+lsb_release -si 2>/dev/null|grep -qi ubuntu && vendor=ubuntu
+dist=`lsb_release -sc 2>/dev/null || echo squeeze`
+sed -i "s/VENDOR/$vendor/" /etc/apt/sources.list.d/netxms.list
+sed -i "s/DIST/$dist/" /etc/apt/sources.list.d/netxms.list
