@@ -1,7 +1,21 @@
 #!/bin/sh
 
-vendor=debian
+vendor=
+lsb_release -si 2>/dev/null|grep -qi debian && vendor=debian
 lsb_release -si 2>/dev/null|grep -qi ubuntu && vendor=ubuntu
-dist=`lsb_release -sc 2>/dev/null || echo squeeze`
-sed -i "s/VENDOR/$vendor/" /etc/apt/sources.list.d/netxms.list
-sed -i "s/DIST/$dist/" /etc/apt/sources.list.d/netxms.list
+lsb_release -si 2>/dev/null|grep -qi devuan && vendor=devuan
+dist=`lsb_release -sc 2>/dev/null`
+if [ -z "$vendor" -o -z "$dist" ]; then
+	echo
+	echo
+	echo WARNING:
+	echo
+	echo "  Can't detect OS distributor or codename (based on lsb_release output)"
+	echo "  Adjust /etc/apt/sources.list.d/netxms.list and run \"apt update\""
+	echo
+	echo
+else
+	echo sed -i "s/VENDOR/$vendor/" /etc/apt/sources.list.d/netxms.list
+	echo sed -i "s/DIST/$dist/" /etc/apt/sources.list.d/netxms.list
+fi
+exit 0
