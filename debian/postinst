@@ -15,7 +15,7 @@ if [ -z "$vendor" -o -z "$dist" ]; then
 	echo
 	echo
 else
-	echo sed -i "s/VENDOR/$vendor/" /etc/apt/sources.list.d/netxms.list
-	echo sed -i "s/DIST/$dist/" /etc/apt/sources.list.d/netxms.list
+	sed -i "s/VENDOR/$vendor/" /etc/apt/sources.list.d/netxms.list
+	sed -i "s/DIST/$dist/" /etc/apt/sources.list.d/netxms.list
 fi
 exit 0
