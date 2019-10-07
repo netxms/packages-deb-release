@@ -10,5 +10,5 @@ Vcs-Browser: http://git.netxms.org/public/netxms-packages.git
 
 Package: netxms-release
 Architecture: all
-Depends: ${misc:Depends}
+Depends: lsb-release, ${misc:Depends}
 Description: Package to install apt source and gpg keyring
