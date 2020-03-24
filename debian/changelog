@@ -1,3 +1,9 @@
+netxms-release (1.8) stable; urgency=medium
+
+  * Expired signing key updated
+
+ -- Alex Kirhenshtein <alk@netxms.org>  Tue, 24 Mar 2020 18:06:40 +0200
+
 netxms-release (1.7) stable; urgency=medium
 
   * Raspbian support added
