@@ -1,3 +1,9 @@
+netxms-release (1.9) stable; urgency=medium
+
+  * Support for Linux Mint added
+
+ -- Alex Kirhenshtein <alk@netxms.org>  Thu, 11 Jun 2020 13:57:49 +0300
+
 netxms-release (1.8) stable; urgency=medium
 
   * Expired signing key updated
