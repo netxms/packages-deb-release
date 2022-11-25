@@ -9,7 +9,9 @@ dist=`lsb_release -sc 2>/dev/null`
 
 # Linux Mint is based on Ubuntu, Linux Mint Debain Edition is based on Debian
 if [ `lsb_release -si|tr A-Z a-z` = 'linuxmint' ]; then
-	vendor=`grep ID_LIKE /etc/os-release | cut -d= -f2`
+	vendor=`grep ID_LIKE /etc/os-release | cut -d= -f2` # required for older Mint verions
+   grep -q UBUNTU_CODENAME /etc/os-release && vendor=ubuntu
+   grep -q DEBIAN_CODENAME /etc/os-release && vendor=debian
 	dist=`grep -i "$vendor"_codename /etc/os-release | cut -d= -f2`
 fi
 
