@@ -1,1 +1,6 @@
 *.deb
+debian/.debhelper/
+debian/files
+debian/netxms-release.debhelper.log
+debian/netxms-release.substvars
+debian/netxms-release/
