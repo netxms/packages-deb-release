@@ -1,3 +1,9 @@
+netxms-release (1.12) stable; urgency=high
+
+  * Signing key updated
+
+ -- Alex Kirhenshtein <alk@netxms.org>  Tue, 05 Mar 2024 21:04:51 +0200
+
 netxms-release (1.11) stable; urgency=medium
 
   * Support for Linux Mint 21
