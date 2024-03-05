@@ -4,4 +4,7 @@ set -e
 
 rm -f ../netxms-release*.deb
 dpkg-buildpackage -us -uc
-dpkg-sig -s origin ../netxms-release_*_all.deb
+debsign -e info@netxms.org
+cp ../netxms-release_*_all.deb .
+
+echo ALL DONE

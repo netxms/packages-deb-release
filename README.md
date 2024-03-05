@@ -2,3 +2,15 @@
 
 This repository contains packaging scripts for NetXMS metapackage (netxms-release).
 Server/Agent packages are available at https://github.com/netxms/packages-deb.
+
+# Sample build process
+
+```
+docker run -it --rm \
+    -v (pwd):/build \
+    -v .../C72F55498B31A527181D91D9179C0A80CDFADDB1.sec:/root/C72F55498B31A527181D91D9179C0A80CDFADDB1.sec:ro \
+    debian:12 bash -l
+apt update && apt install -y dpkg-dev debhelper devscripts
+gpg --import /root/C72F55498B31A527181D91D9179C0A80CDFADDB1.sec
+cd /build && ./package.sh
+```
