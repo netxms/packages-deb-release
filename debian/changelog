@@ -1,3 +1,9 @@
+netxms-release (1.13) stable; urgency=medium
+
+  * Signing key updated
+
+ -- Alex Kirhenshtein <alk@netxms.org>  Fri, 21 Feb 2025 11:23:59 +0200
+
 netxms-release (1.12) stable; urgency=high
 
   * Signing key updated
