@@ -1,5 +1,1 @@
-# Stable releases
-deb http://packages.netxms.org/VENDOR DIST main
-
-# Beta/Milestone releases, can be less stable (uncomment to enable)
-#deb http://packages.netxms.org/VENDOR DIST unstable
+deb [signed-by=/etc/apt/keyrings/netxms-keyring.gpg] https://packages.netxms.org/VENDOR DIST main

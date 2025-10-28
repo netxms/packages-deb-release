@@ -1,2 +1,2 @@
-src/netxms-keyring.gpg /etc/apt/trusted.gpg.d
+src/netxms-keyring.gpg /etc/apt/keyrings
 src/netxms.list /etc/apt/sources.list.d
