@@ -1,1 +1,1 @@
-deb [signed-by=/etc/apt/keyrings/netxms-keyring.gpg] https://packages.netxms.org/VENDOR DIST main
+deb [signed-by=/etc/apt/keyrings/netxms-keyring.gpg] https://packages.netxms.org/7.x/VENDOR DIST main
